@@ -1,14 +1,13 @@
 export default function HelloWorld(){
     return (
         <div>
-            <Header/>
+            <Header text="belajar react "/>
             <Paragraf/>
         </div>
     )
 }
 
-function Header(){
-    const text = "Belajar React JS Dasar"
+function Header({text="LUPA KASIH TEXT"}){
     return(
         <h1 style={{
             color:"grey",
