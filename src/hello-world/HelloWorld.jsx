@@ -8,13 +8,15 @@ export default function HelloWorld(){
 }
 
 function Header(){
+    const text = "Belajar React JS Dasar"
     return(
-        <h1>Belajar React JS Dasar</h1>
+        <h1>{text.toUpperCase()}</h1>
     )
 }
 
 function Paragraf(){
+    const text = "Hello"
     return (
-        <p>hello</p>
+        <p>{text.toLowerCase()}</p>
     )
 }
