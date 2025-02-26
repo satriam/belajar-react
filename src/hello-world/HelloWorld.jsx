@@ -10,7 +10,10 @@ export default function HelloWorld(){
 function Header(){
     const text = "Belajar React JS Dasar"
     return(
-        <h1>{text.toUpperCase()}</h1>
+        <h1 style={{
+            color:"grey",
+            backgroundColor:"cyan"
+        }}>{text.toUpperCase()}</h1>
     )
 }
 
