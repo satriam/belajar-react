@@ -1,0 +1,10 @@
+.content{
+    background-color: antiquewhite;
+    font-weight: 300;
+}
+
+.judul{
+    position: inherit;
+    font-size: medium;
+    font-weight: bold;
+}
