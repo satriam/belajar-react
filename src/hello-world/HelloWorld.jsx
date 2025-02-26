@@ -1,8 +1,12 @@
 export default function HelloWorld(){
+    const data = {
+        text: "kirim props spread syntax",
+        text2: "bisa mengacu ke json api"
+    }
     return (
         <div>
-            <Header text="belajar react "/>
-            <Paragraf/>
+            <Header {...data} />
+            <Paragraf {...data}/>
         </div>
     )
 }
@@ -16,9 +20,8 @@ function Header({text="LUPA KASIH TEXT"}){
     )
 }
 
-function Paragraf(){
-    const text = "Hello"
+function Paragraf(props){
     return (
-        <p>{text.toLowerCase()}</p>
+        <p>{props.text2.toLowerCase()}</p>
     )
 }
